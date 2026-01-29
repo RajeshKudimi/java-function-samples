@@ -158,6 +158,20 @@
                     <artifactId>azure-functions-maven-plugin</artifactId>
                     <version>${azure.functions.maven.plugin.version}</version>
                 </plugin>
+				<plugin>
+                    <groupId>com.microsoft.azure</groupId>
+                    <artifactId>azure-functions-maven-plugin</artifactId>
+                    <version>1.24.0</version>
+                    <configuration>
+                    <resourceGroup>my-resource-group</resourceGroup>
+                    <appName>my-function-app</appName>
+                    <region>westeurope</region>
+                    <runtime>
+                    <os>linux</os>
+                    <javaVersion>17</javaVersion>
+                    </runtime>
+                    </configuration>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
